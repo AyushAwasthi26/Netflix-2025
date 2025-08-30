@@ -481,3 +481,89 @@ input{
     font-size: 0.8rem;
     color: #737373;
 }
+
+
+/*MAKING THIS BADBOY RESPONSIVE*/
+@media only screen and (max-width: 1400px) {
+    .main > :first-child {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero > :first-child {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .main {
+        background-size: 150vw;
+    }
+
+    .main > nav {
+        max-width: 90vw;
+    }
+
+    .reasons-section, .trending-section, .faq-section, .ready-to-watch-section, .footer {
+        padding: 50px 40px;
+        margin: 20px 40px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main > nav > span img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .hero > :first-child {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .hero > :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero > :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main input {
+        width: 90vw;
+    }
+
+    .btn-red {
+        width: 90vw;
+    }
+
+    .reasons-grid, .faq-list, .footer-links {
+        grid-template-columns: 1fr;
+    }
+
+    .poster-grid {
+        display: block;
+        overflow-x: hidden;
+    }
+    
+    .poster-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .reasons-section, .trending-section, .faq-section, .ready-to-watch-section, .footer {
+        padding: 50px 20px;
+        margin: 20px 20px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+}
