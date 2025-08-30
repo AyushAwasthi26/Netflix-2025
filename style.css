@@ -241,6 +241,7 @@ input{
     gap: 20px;
 }
 .reason-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-image: linear-gradient(293deg, #341175, #1e1e1e);
     box-shadow: 0 4px 8px rgba(33, 32, 34, 0.473);
     border-radius: 25px;
@@ -270,6 +271,16 @@ input{
     opacity: 1;
 }
 
+/*Adding hover yehhhhh*/
+.reason-card:hover {
+    /* Lift the card significantly more */
+    transform: translateY(-20px) scale(1.05) rotateZ(2deg); 
+    /* Create a much larger, darker shadow for a pronounced "pop" */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8); 
+    /* Optional: Slightly increase brightness for an additional pop */
+    filter: brightness(1.1); 
+}
+
 /* FAQ section styles */
 .faq-section {
   color: white;
@@ -297,6 +308,7 @@ input{
   margin-bottom: 10px;
   border-radius: 4px;
   overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .faq-question {
@@ -340,6 +352,13 @@ input{
   padding: 20px 0;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/*Adding hover effect to faq section*/
+.faq-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #404040;
 }
 
 /* Re-added section styles */
